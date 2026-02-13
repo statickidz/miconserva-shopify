@@ -97,7 +97,7 @@
             "share_on_facebook": true,
             "share_on_x": true,
             "share_on_pinterest": true,
-            "custom_share_link": false,
+            "custom_share_link": true,
             "collapsible": false,
             "opened_by_default": false,
             "layout": "boxed",
