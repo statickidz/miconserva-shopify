@@ -1,49 +1,68 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "name": "t:sections.footer.name",
   "type": "footer",
+  "name": "t:sections.refactor_words.labels.footer_group",
   "sections": {
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-0": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
-          }
-        },
-        "footer-1": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Info",
-            "menu": "footer"
-          }
-        },
-        "footer-2": {
+        "b497d03c-a24c-4683-8d7b-5aa889473ba2": {
           "type": "text",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "title": "LOCAL",
+            "size": "h4",
+            "content": "<p>Fresh products from local producers, delivered directly to your front door,  daily.</p>",
+            "show_social_icons": true,
+            "enable_follow_on_shop": true
+          }
+        },
+        "97af5be7-f228-4009-8f3e-12d1e44573b9": {
+          "type": "menu",
+          "settings": {
+            "title": "Popular categories",
+            "menu": "categories",
+            "open_in_new_window": false
+          }
+        },
+        "68da10ba-83aa-4858-b4e7-b19015289fd5": {
+          "type": "text",
+          "settings": {
+            "title": "Main Store",
+            "size": "h5",
+            "content": "<p>13 Champs-Élysées<br/>75008 Paris<br/>France</p>",
+            "show_social_icons": false,
+            "enable_follow_on_shop": true
+          }
+        },
+        "eaa55a7e-c72f-40e3-adcb-a4b5111fdda9": {
+          "type": "menu",
+          "settings": {
+            "title": "Quick links",
+            "menu": "footer",
+            "open_in_new_window": false
           }
         }
       },
       "block_order": [
-        "footer-0",
-        "footer-1",
-        "footer-2"
+        "b497d03c-a24c-4683-8d7b-5aa889473ba2",
+        "97af5be7-f228-4009-8f3e-12d1e44573b9",
+        "68da10ba-83aa-4858-b4e7-b19015289fd5",
+        "eaa55a7e-c72f-40e3-adcb-a4b5111fdda9"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "show_social": true,
-        "enable_country_selector": false,
-        "enable_language_selector": false,
-        "payment_enable": true,
-        "show_policy": false,
-        "margin_top": 48,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "layout": "grid-4 grid-portable-2 grid-lap-1",
+        "show_locale_selector": true,
+        "show_country_selector": false,
+        "remove_margin": false,
+        "seo_h_tag": "h4"
       }
     }
   },

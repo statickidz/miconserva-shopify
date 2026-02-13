@@ -1,0 +1,72 @@
+/* Section team – follows theme card__icon and grid patterns */
+
+/* Description block (below section-heading) */
+.section-team__description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-team__description p {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+}
+
+.section-team__description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Member icon (circular avatar) – same sizing as card__icon, circle shape.
+   Do not override .lazy-image figure positioning – theme uses padding-top ratio box. */
+.section-team__member-icon {
+  width: 100%;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-background-main);
+}
+
+.section-team__member-icon:has(.svg-placeholder) {
+  background-color: var(--color-background-secondary, #f5f5f5);
+}
+
+/* Clip the theme's lazy-image (square) to circle; leave figure in flow */
+.section-team__member-icon .lazy-image {
+  margin: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+}
+
+/* Ensure image is visible (theme uses opacity:0 until .lazyloaded; onload may not fire with lazy loading) */
+.section-team__member-icon .lazy-image img {
+  opacity: 1;
+}
+
+.section-team__member-icon .svg-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: auto;
+  opacity: 0.4;
+}
+
+/* Member card layout */
+.section-team__member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-team__member.element--no-border.element--no-radius {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.section-team__member .h5 {
+  margin-bottom: 0.25rem;
+}

@@ -1,0 +1,325 @@
+{{ 'section-team.css' | asset_url | stylesheet_tag }}
+
+<div class="section-team container--large remove-empty-space
+  {% unless section.settings.remove_margin %} {% unless section.settings.descrease_margin %} container--vertical-space {% else %} container--vertical-space-grid {% endunless %} {% endunless %}
+  {% if section.settings.section_background_color != 'rgba(0,0,0,0)' or section.settings.section_background_gradient != blank %} container--has-background {% endif %}
+  {% if section.settings.section_visibility == 'mobile' %} element--hide-on-desk {% endif %}
+  {% if section.settings.section_visibility == 'desktop' %} element--hide-on-small {% endif %}
+">
+
+  {%- render 'section-heading', heading: section.settings.heading, subheading: section.settings.subheading, heading_tag: section.settings.seo_h_tag, layout: section.settings.section_heading_layout -%}
+
+  {%- unless section.settings.description == blank -%}
+    <div class="section-team__description rte spacing--small gutter-bottom--page remove-empty-space">
+      {{ section.settings.description }}
+    </div>
+  {%- endunless -%}
+
+  <style>
+    #shopify-section-{{ section.id }} .section-team__member-icon,
+    #shopify-section-{{ section.id }} .section-team__member-icon figure,
+    #shopify-section-{{ section.id }} .section-team__member-icon img {
+      border-radius: 50%;
+    }
+    #shopify-section-{{ section.id }} .section-team__member-icon {
+      background-color: transparent;
+    }
+  </style>
+
+  {%- if section.settings.inherit_card_design -%}
+    {%- render 'custom-colors', id: section.id, text: section.settings.color_text_main, background: section.settings.color_background_main, accent: section.settings.color_accent_main, borders: section.settings.color_borders_main, shadow: section.settings.color_shadow_main, hide_borders: section.settings.color_hide_borders, hide_shadow: section.settings.color_hide_shadow -%}
+  {%- endif -%}
+
+  <div id="element-{{ section.id }}" class="grid grid--layout {{ section.settings.layout }}">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'member' -%}
+          <div {{ block.shopify_attributes }} class="section-team__member js-slider-item
+            {% if section.settings.inherit_card_design %}
+              card gutter--regular
+            {% else %}
+              element--no-border element--no-radius
+            {% endif %}
+            text-align--center
+          ">
+            <div class="card__icon section-team__member-icon card__icon-size--{% if section.settings.layout == 'grid-3 grid-lap-2' %}large{% else %}regular{% endif %}" id="element-{{ block.id }}">
+              {%- if block.settings.image != blank -%}
+                <figure class="lazy-image lazy-image--animation" data-ratio style="padding-top: 100%; display: block; margin: 0;">
+                  <img
+                    src="{{ block.settings.image | image_url: width: 400, height: 400, crop: 'center' }}"
+                    alt="{{ block.settings.title | escape }}"
+                    srcset="
+                      {{ block.settings.image | image_url: width: 200, height: 200, crop: 'center' }} 200w,
+                      {{ block.settings.image | image_url: width: 400, height: 400, crop: 'center' }} 400w,
+                      {{ block.settings.image | image_url: width: 600, height: 600, crop: 'center' }} 600w
+                    "
+                    sizes="{% if section.settings.layout contains 'grid-4' %}(max-width: 474px) 120px, 160px{% else %}(max-width: 474px) 120px, (max-width: 1023px) 160px, 220px{% endif %}"
+                    loading="lazy"
+                    width="400"
+                    height="400"
+                    onload="this.parentNode.classList.add('lazyloaded')"
+                  />
+                </figure>
+              {%- else -%}
+                {%- render 'lazy-svg', image: 'image', class: 'svg-placeholder svg-placeholder--background svg-placeholder--foreground' -%}
+              {%- endif -%}
+            </div>
+            <div class="{% if section.settings.inherit_card_design %} gutter-top--regular {% else %} gutter--regular {% endif %} spacing--small remove-empty-space" {% if section.settings.inherit_card_design %} style="padding-bottom: 0" {% endif %}>
+              {%- unless block.settings.title == blank -%}
+                <div style="color: var(--color-text-main)">
+                  <h3 class="h5" style="margin-bottom: 0; display: block">{{ block.settings.title | escape }}</h3>
+                </div>
+              {%- endunless -%}
+              {%- unless block.settings.role == blank -%}
+                <div class="text-size--small text-color--opacity" style="color: var(--color-text-main)">{{ block.settings.role | escape }}</div>
+              {%- endunless -%}
+            </div>
+          </div>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{%- if section.settings.section_background_color != 'rgba(0,0,0,0)' -%}
+  {% style %}
+    #shopify-section-{{ section.id }} {
+      background-color: {{ section.settings.section_background_color }};
+    }
+  {% endstyle %}
+{%- endif -%}
+{%- if section.settings.section_background_gradient != blank -%}
+  {% style %}
+    #shopify-section-{{ section.id }} {
+      background: {{ section.settings.section_background_gradient }};
+    }
+  {% endstyle %}
+{%- endif -%}
+{%- if section.settings.section_heading_color != 'rgba(0,0,0,0)' -%}
+  {% style %}
+    #shopify-section-{{ section.id }} {
+      --color-text-main: {{ section.settings.section_heading_color }};
+    }
+  {% endstyle %}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Team",
+  "tag": "section",
+  "class": "mount-section-team",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:local-march-update.labels.heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:sections.local-extra-words.sections.headings.heading",
+      "default": "Conócenos"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "t:sections.local-extra-words.sections.headings.subheading",
+      "default": "Empresa familiar | Desde 1992"
+    },
+    {
+      "type": "select",
+      "id": "section_heading_layout",
+      "label": "t:sections.rich-text.settings.text_alignment.label",
+      "options": [
+        { "value": "section-heading--left", "label": "t:sections.rich-text.settings.text_alignment.options__1.label" },
+        { "value": "section-heading--center", "label": "t:sections.rich-text.settings.text_alignment.options__2.label" }
+      ],
+      "default": "section-heading--left"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.local-extra-words.sections.headings.caption",
+      "default": "<p>La empresa cuenta con un equipo caracterizado por tener una visión del mundo de la alimentación diferencial, crítica y en continua innovación.</p>"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-article.blocks.content.name"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "t:sections.local-extra-words.sections.columns.name",
+      "info": "t:sections.local-extra-words.sections.columns.info",
+      "options": [
+        { "value": "grid-2 grid-lap-1", "label": "2 columns" },
+        { "value": "grid-3 grid-lap-2", "label": "t:sections.local-extra-words.sections.columns.option__2" },
+        { "value": "grid-4 grid-portable-3 grid-lap-2", "label": "t:sections.local-extra-words.sections.columns.option__3" },
+        { "value": "grid-5 grid-portable-4 grid-lap-3 grid-palm-2", "label": "t:sections.local-extra-words.sections.columns.option__4" }
+      ],
+      "default": "grid-4 grid-portable-3 grid-lap-2"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.local-extra-words.sections.headings.custom_colors"
+    },
+    {
+      "type": "checkbox",
+      "id": "inherit_card_design",
+      "label": "t:local-march-update.labels.inherit_card_design",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "color_background_main",
+      "visible_if": "{{ section.settings.inherit_card_design == true }}",
+      "label": "t:sections.split-extra-words.settings_schema.colors.settings.background",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "color_text_main",
+      "visible_if": "{{ section.settings.inherit_card_design == true }}",
+      "label": "t:sections.split-extra-words.settings_schema.colors.settings.text",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "color_accent_main",
+      "visible_if": "{{ section.settings.inherit_card_design == true }}",
+      "label": "t:sections.local-extra-words.settings_schema.colors.settings.accent",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "color_borders_main",
+      "visible_if": "{{ section.settings.inherit_card_design == true }}",
+      "label": "t:sections.local-extra-words.settings_schema.colors.settings.borders",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "color_shadow_main",
+      "visible_if": "{{ section.settings.inherit_card_design == true }}",
+      "label": "t:local-march-update.shadows.label",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "checkbox",
+      "id": "color_hide_borders",
+      "visible_if": "{{ section.settings.inherit_card_design == true }}",
+      "label": "t:sections.local-extra-words.settings_schema.colors.settings.hide_border",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "color_hide_shadow",
+      "visible_if": "{{ section.settings.inherit_card_design == true }}",
+      "label": "t:local-march-update.shadows.hide",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "t:local-march-update.labels.section_design"
+    },
+    {
+      "type": "color",
+      "id": "section_background_color",
+      "label": "t:sections.local-extra-words.settings_schema.product-card.badges.custom_badges.color",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color_background",
+      "id": "section_background_gradient",
+      "label": "t:local-230.background_gradient"
+    },
+    {
+      "type": "color",
+      "id": "section_heading_color",
+      "label": "t:sections.local-extra-words.settings_schema.product-card.badges.custom_badges.text_color",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "checkbox",
+      "id": "descrease_margin",
+      "visible_if": "{{ section.settings.remove_margin == false }}",
+      "label": "t:theme_blocks.descrease_top_margin",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_margin",
+      "visible_if": "{{ section.settings.descrease_margin == false }}",
+      "label": "t:sections.local-extra-words.sections.rich-text.settings.remove_margin.label",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "t:sections.refactor_words.seo.name"
+    },
+    {
+      "type": "select",
+      "id": "seo_h_tag",
+      "label": "t:sections.refactor_words.seo.label",
+      "info": "t:sections.refactor_words.seo.info",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "span", "label": "span" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.refactor_words.announcement-bar.visibility.label"
+    },
+    {
+      "type": "select",
+      "id": "section_visibility",
+      "label": "t:sections-visibility.label",
+      "options": [
+        { "value": "always", "label": "t:sections-visibility.options.always" },
+        { "value": "mobile", "label": "t:sections-visibility.options.mobile" },
+        { "value": "desktop", "label": "t:sections-visibility.options.desktop" }
+      ],
+      "default": "always"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "member",
+      "name": "Team member",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.gallery.blocks.image.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.local-extra-words.sections.headings.title"
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "t:sections.local-extra-words.sections.headings.caption"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Team",
+      "category": "t:sections-categories.storytelling",
+      "blocks": [
+        { "type": "member", "settings": { "title": "Team member 1", "role": "Role" } },
+        { "type": "member", "settings": { "title": "Team member 2", "role": "Role" } },
+        { "type": "member", "settings": { "title": "Team member 3", "role": "Role" } },
+        { "type": "member", "settings": { "title": "Team member 4", "role": "Role" } }
+      ]
+    }
+  ],
+  "disabled_on": { "groups": ["header"] }
+}
+{% endschema %}
