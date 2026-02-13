@@ -14,15 +14,6 @@
     "announcement": {
       "type": "announcement-bar",
       "blocks": {
-        "a88d0552-422f-479a-9ccf-bddae7bb3e36": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "text": "Save 20% use code: BULKSAVE",
-            "link": "",
-            "target": true
-          }
-        },
         "359cd407-1fe0-473f-8b0c-cf52d0783b96": {
           "type": "content",
           "settings": {
@@ -30,11 +21,19 @@
             "link": "",
             "target": false
           }
+        },
+        "a88d0552-422f-479a-9ccf-bddae7bb3e36": {
+          "type": "content",
+          "settings": {
+            "text": "Recogida local GRATIS en nuestras tiendas",
+            "link": "",
+            "target": true
+          }
         }
       },
       "block_order": [
-        "a88d0552-422f-479a-9ccf-bddae7bb3e36",
-        "359cd407-1fe0-473f-8b0c-cf52d0783b96"
+        "359cd407-1fe0-473f-8b0c-cf52d0783b96",
+        "a88d0552-422f-479a-9ccf-bddae7bb3e36"
       ],
       "settings": {
         "visibility": "all",
