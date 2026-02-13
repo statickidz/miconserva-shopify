@@ -459,7 +459,7 @@
         "local_availability_QfVefU"
       ],
       "settings": {
-        "heading": "Bread & Bakery",
+        "heading": "Bread and Bakery",
         "subheading": "",
         "show_view_all": true,
         "section_heading_layout": "section-heading--left",
@@ -1490,6 +1490,7 @@
         "subheading": "",
         "section_heading_layout": "section-heading--left",
         "open_first": false,
+        "use_product_faqs": true,
         "toggle_size": "small",
         "form_enable": false,
         "form_title": "Contact form",
