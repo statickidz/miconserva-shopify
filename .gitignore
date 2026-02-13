@@ -1,33 +1,3 @@
-# Shopify #
-###################
-config.yml
-config/shopify.yml
-.env
-.env.*
-deploy.log
-upload
-secrets.json
-
-# Build / tooling #
-###################
-node_modules
-dist
-*.log
-npm-debug.log
-.sass-cache
-.cache
-_site
-.jekyll-metadata
-.ruby-version
-
-# IDE / editor #
-################
-.idea
-.vscode
-*.swp
-*.swo
-*~
-
 # OS generated files #
 ######################
 .DS_Store
@@ -37,23 +7,4 @@ _site
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Archives #
-############
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# Compiled / binaries #
-######################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+.shopify

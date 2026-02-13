@@ -1,81 +1,82 @@
-.pagination a {
-  display: inline-block;
-  line-height: 1;
-  color: var(--color-text-main);
-  border: solid 1px transparent;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  transition: ease 250ms background-color, ease 250ms border-color, ease 250ms color;
-}
-.no-touchevents .pagination a:hover, .pagination .no-touchevents a:hover {
-  border-color: var(--color-text-main);
+.pagination-wrapper {
+  margin-top: 4rem;
 }
 
-.pagination li.active {
-  background-color: var(--color-text-main);
-  color: var(--color-foreground-main);
-  line-height: 1;
-  border: solid 1px var(--color-borders-main);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  cursor: default;
-}
-
-.pagination {
-  padding-top: var(--gutter-large);
-  text-align: start;
-}
-@media screen and (max-width: 767px) {
-  .pagination {
-    text-align: center;
+@media screen and (min-width: 990px) {
+  .pagination-wrapper {
+    margin-top: 5rem;
   }
 }
-.pagination li {
-  margin: 0 0.3125rem;
-  text-align: center;
+
+.pagination__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.pagination li:not(.hide) {
-  display: inline-block;
+
+.pagination__list > li {
+  flex: 1 0 4.4rem;
+  max-width: 4.4rem;
 }
-.pagination li.prev, .pagination li.next {
-  background-position: center center;
-  color: transparent !important;
+
+.pagination__list > li:not(:last-child) {
+  margin-right: 1rem;
 }
-.pagination li.prev svg path, .pagination li.next svg path {
-  fill: var(--color-text-main);
+
+.pagination__item {
+  color: rgb(var(--color-foreground));
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 4.4rem;
+  width: 100%;
+  padding: 0;
+  text-decoration: none;
 }
-.pagination li.prev a, .pagination li.next a {
-  border-color: var(--color-borders-main);
+
+a.pagination__item:hover::after {
+  height: 0.1rem;
 }
-.no-touchevents .pagination li.prev a:hover, .no-touchevents .pagination li.next a:hover {
-  background-color: var(--color-text-main);
-  border-color: var(--color-text-main);
+
+.pagination__item .icon-caret {
+  height: 0.6rem;
 }
-.no-touchevents .pagination li.prev a:hover svg path, .no-touchevents .pagination li.next a:hover svg path {
-  fill: var(--color-foreground-main);
+
+.pagination__item--current::after {
+  height: 0.1rem;
 }
-.pagination li.prev {
+
+.pagination__item--current::after,
+.pagination__item:hover::after {
+  content: '';
+  display: block;
+  width: 2rem;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: currentColor;
+}
+
+.pagination__item--next .icon {
+  margin-left: -0.2rem;
   transform: rotate(90deg);
 }
-.pagination li.next {
+
+.pagination__item--next:hover .icon {
+  transform: rotate(90deg) scale(1.07);
+}
+
+.pagination__item--prev .icon {
+  margin-right: -0.2rem;
   transform: rotate(-90deg);
 }
-.pagination li.mobile {
+
+.pagination__item--prev:hover .icon {
+  transform: rotate(-90deg) scale(1.07);
+}
+
+.pagination__item-arrow:hover::after {
   display: none;
-  margin: 0 0.75rem;
-}
-@media screen and (max-width: 767px) {
-  .pagination li.mobile {
-    display: inline-block;
-  }
-}
-.pagination li.disabled {
-  color: var(--color-secondary-text-main);
-  display: inline-block;
-  padding: 0.625rem 0.9375rem;
-  border: solid 1px transparent;
 }
