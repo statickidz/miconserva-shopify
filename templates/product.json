@@ -12,12 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "vendor",
-          "settings": {
-            "text_size": "text-size--regular"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
@@ -40,20 +34,6 @@
           "type": "space",
           "settings": {}
         },
-        "description": {
-          "type": "description",
-          "settings": {
-            "heading": "",
-            "subtitle": "",
-            "tooltip_info": "",
-            "collapsible": false,
-            "opened_by_default": false,
-            "layout": "compact",
-            "text_color": "rgba(0,0,0,0)",
-            "bg_color": "rgba(0,0,0,0)",
-            "darken_header": false
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -71,10 +51,24 @@
           "type": "space",
           "settings": {}
         },
+        "description": {
+          "type": "description",
+          "settings": {
+            "heading": "Descripción",
+            "subtitle": "",
+            "tooltip_info": "",
+            "collapsible": true,
+            "opened_by_default": false,
+            "layout": "compact",
+            "text_color": "rgba(0,0,0,0)",
+            "bg_color": "rgba(0,0,0,0)",
+            "darken_header": false
+          }
+        },
         "nutrition_6txcnc": {
           "type": "nutrition",
           "settings": {
-            "heading": "Nutritional information",
+            "heading": "Información nutricional",
             "subtitle": "",
             "tooltip_info": "",
             "label_left": "Typical values",
@@ -84,7 +78,7 @@
             "hide_block_if": false,
             "collapsible": true,
             "opened_by_default": false,
-            "layout": "boxed",
+            "layout": "compact",
             "text_color": "rgba(0,0,0,0)",
             "bg_color": "rgba(0,0,0,0)",
             "darken_header": true
@@ -140,14 +134,13 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "price",
         "variant_picker",
         "space_wXNYjD",
-        "description",
         "buy_buttons",
         "empty_space_2",
+        "description",
         "nutrition_6txcnc",
         "empty_space_1",
         "nutriscore_eRPt3r",
