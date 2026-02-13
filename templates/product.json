@@ -88,36 +88,10 @@
           "type": "space",
           "settings": {}
         },
-        "nutriscore_eRPt3r": {
-          "type": "nutriscore",
-          "settings": {
-            "title": "Nutriscore",
-            "subtitle": "",
-            "tooltip_info": "",
-            "active_item": 3,
-            "active_item_dynamic": "",
-            "label_1": "A",
-            "color_1": "#007517",
-            "label_2": "B",
-            "color_2": "#94c11e",
-            "label_3": "C",
-            "color_3": "#ffde00",
-            "label_4": "D",
-            "color_4": "#f29200",
-            "label_5": "E",
-            "color_5": "#dd1e01",
-            "collapsible": false,
-            "opened_by_default": false,
-            "layout": "compact",
-            "text_color": "rgba(0,0,0,0)",
-            "bg_color": "rgba(0,0,0,0)",
-            "darken_header": true
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
-            "title": "Share",
+            "title": "Comparte",
             "subtitle": "",
             "tooltip_info": "",
             "share_on_facebook": true,
@@ -126,7 +100,7 @@
             "custom_share_link": false,
             "collapsible": false,
             "opened_by_default": false,
-            "layout": "compact",
+            "layout": "boxed",
             "text_color": "rgba(0,0,0,0)",
             "bg_color": "rgba(0,0,0,0)",
             "darken_header": true
@@ -143,7 +117,6 @@
         "description",
         "nutrition_6txcnc",
         "empty_space_1",
-        "nutriscore_eRPt3r",
         "share"
       ],
       "settings": {
