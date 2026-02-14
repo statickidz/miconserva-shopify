@@ -1172,6 +1172,34 @@
         "section_visibility": "always"
       }
     },
+    "1771073309b2a93d1c": {
+      "type": "apps",
+      "blocks": {
+        "google_reviews_trust_badges_hp_google_reviews_widget_iUqRq8": {
+          "type": "shopify://apps/google-reviews-trust-badges-hp/blocks/google_reviews_widget/7f0cbed4-3c3f-4f98-833e-b8cfbec52b31",
+          "settings": {
+            "layout_type": "grid",
+            "grid_layout": "grid_layout_1",
+            "carousel_layout": "carousel_layout_1",
+            "masonry_layout": "masonry_layout_1",
+            "list_layout": "list_layout_1",
+            "padding_top": 20,
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "google_reviews_trust_badges_hp_google_reviews_widget_iUqRq8"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "section_heading_layout": "section-heading--left",
+        "full_width": false,
+        "remove_margin": false,
+        "seo_h_tag": "h2"
+      }
+    },
     "d57de2d5-c548-48dd-a4a3-581d89d355b5": {
       "type": "image-with-hotspots",
       "blocks": {
@@ -1457,6 +1485,7 @@
     "1655121489db318f96",
     "16551304148266b5a5",
     "16551212489c663a1e",
+    "1771073309b2a93d1c",
     "d57de2d5-c548-48dd-a4a3-581d89d355b5",
     "16553621956de397b6",
     "16551127939786a43a",
