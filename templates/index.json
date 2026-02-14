@@ -73,76 +73,14 @@
             "heading_E7DeUU",
             "content_group_xhinPE"
           ]
-        },
-        "slide_image_LLrAYi": {
-          "type": "_slide-image",
-          "settings": {
-            "link": "",
-            "open_in_new_window": false,
-            "color_background_main": "rgba(0,0,0,0)",
-            "color_text_main": "rgba(0,0,0,0)"
-          },
-          "blocks": {
-            "caption_j4d4q3": {
-              "type": "caption",
-              "settings": {
-                "caption": "UP TO 40% OFF",
-                "text_size": "regular",
-                "text_background_color": "rgba(0,0,0,0)",
-                "text_color": "rgba(0,0,0,0)"
-              },
-              "blocks": {}
-            },
-            "heading_wzKzeB": {
-              "type": "heading",
-              "settings": {
-                "heading": "Kitchen & [br]Dining Sale",
-                "title_size": "h1",
-                "line_height": "default",
-                "text_color": "rgba(0,0,0,0)",
-                "seo_h_tag": "h3"
-              },
-              "blocks": {}
-            },
-            "content_group_FDVyLV": {
-              "type": "content-group",
-              "settings": {
-                "spacing": "small"
-              },
-              "blocks": {
-                "button_wf4ffd": {
-                  "type": "button",
-                  "settings": {
-                    "button_label": "BUY NOW",
-                    "link": "",
-                    "open_in_new_window": false,
-                    "button_size": "regular",
-                    "button_style": "solid",
-                    "color_text_buttons": "rgba(0,0,0,0)",
-                    "color_accent_buttons": "rgba(0,0,0,0)"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "button_wf4ffd"
-              ]
-            }
-          },
-          "block_order": [
-            "caption_j4d4q3",
-            "heading_wzKzeB",
-            "content_group_FDVyLV"
-          ]
         }
       },
       "block_order": [
-        "slide_image_rWEXcN",
-        "slide_image_LLrAYi"
+        "slide_image_rWEXcN"
       ],
       "settings": {
-        "desktop_height": "80vh",
-        "mobile_height": "80vh",
+        "desktop_height": "60vh",
+        "mobile_height": "40vh",
         "is_auto_height": false,
         "autorotate_enable": false,
         "autorotate_interval": 6,
