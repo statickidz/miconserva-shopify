@@ -374,7 +374,7 @@
         "subheading": "en los medios",
         "section_heading_layout": "section-heading--left",
         "style": "slider",
-        "border_radius": 200,
+        "border_radius": 0,
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
         "section_heading_color": "rgba(0,0,0,0)",
@@ -404,7 +404,7 @@
         "google_reviews_trust_badges_hp_google_reviews_widget_iUqRq8"
       ],
       "settings": {
-        "heading": "",
+        "heading": "Y lo que decís vosotros...",
         "subheading": "",
         "section_heading_layout": "section-heading--left",
         "full_width": false,
@@ -441,8 +441,8 @@
         "6d7d92cc-64fe-4f89-9974-bb98f18308a0"
       ],
       "settings": {
-        "title": "Inspírate",
-        "subheading": "Con nuestras recetas",
+        "title": "Inspírate con nuestra nutricionista",
+        "subheading": "Recetas, consejos, trucos...",
         "show_view_all": true,
         "section_heading_layout": "section-heading--left",
         "blog": "recetas",
@@ -458,100 +458,23 @@
         "section_visibility": "always"
       }
     },
-    "165597098555c514a4": {
-      "type": "text-columns-images",
-      "blocks": {
-        "1655970985e1e8c596-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/BAG_PNG_MC_2.png",
-            "title": "Recogida local",
-            "caption": "Compra online y recoge cuando quieras.Rápido, cómodo y sin gastos de envío.",
-            "link": "",
-            "open_in_new_window": false,
-            "seo_h_tag": "h3"
-          }
-        },
-        "1655970985e1e8c596-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/icon2.webp",
-            "title": "Envío a domicilio",
-            "caption": "Cajas seguras y embalaje reciclable.Tu pedido llega perfecto, como recién salido del obrador.",
-            "link": "",
-            "open_in_new_window": false,
-            "seo_h_tag": "h3"
-          }
-        },
-        "1655970985e1e8c596-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/icon3.webp",
-            "title": "Conservas con origen",
-            "caption": "Trabajamos con pequeños productores que respetan el producto y el tiempo. Calidad real, sin atajos.",
-            "link": "",
-            "open_in_new_window": false,
-            "seo_h_tag": "h3"
-          }
-        },
-        "41380ebb-0166-4f1a-af8f-a77893a5b806": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/verdudas-de-navarra-png-fondo-transparente.png",
-            "title": "Sabor que se nota",
-            "caption": "Ingredientes sencillos, recetas tradicionales y un sabor que sorprende.Porque comer bien debería ser lo normal.",
-            "link": "",
-            "open_in_new_window": false,
-            "seo_h_tag": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "1655970985e1e8c596-0",
-        "1655970985e1e8c596-1",
-        "1655970985e1e8c596-2",
-        "41380ebb-0166-4f1a-af8f-a77893a5b806"
-      ],
+    "newsletter_anVyHJ": {
+      "type": "newsletter",
+      "name": "t:sections.newsletter.name",
       "settings": {
-        "heading": "",
-        "subheading": "",
-        "section_heading_layout": "section-heading--left",
-        "style": "slider",
-        "layout": "grid-4 grid-portable-3 grid-lap-2",
-        "border_radius": 0,
-        "inherit_card_design": false,
+        "show_icon": true,
+        "title": "Your best promotion yet",
+        "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements or welcome customers to your store.</p>",
         "color_background_main": "rgba(0,0,0,0)",
         "color_text_main": "rgba(0,0,0,0)",
-        "color_accent_main": "rgba(0,0,0,0)",
         "color_borders_main": "rgba(0,0,0,0)",
         "color_shadow_main": "rgba(0,0,0,0)",
         "color_hide_borders": false,
         "color_hide_shadow": false,
-        "section_background_color": "#f5f5f5",
+        "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
-        "section_heading_color": "rgba(0,0,0,0)",
         "descrease_margin": false,
         "remove_margin": false,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
-      }
-    },
-    "1655112847aaa4cc50": {
-      "type": "newsletter",
-      "settings": {
-        "show_icon": true,
-        "title": "Suscríbete a nuestro boletín",
-        "text": "<p>Recibe novedades, lanzamientos exclusivos y promociones especiales de nuestras conservas artesanas.</p>",
-        "color_background_main": "#e7e7e7",
-        "color_text_main": "#000000",
-        "color_borders_main": "rgba(0,0,0,0)",
-        "color_shadow_main": "rgba(0,0,0,0)",
-        "color_hide_borders": true,
-        "color_hide_shadow": false,
-        "section_background_color": "#e7e7e7",
-        "section_background_gradient": "",
-        "descrease_margin": false,
-        "remove_margin": true,
         "seo_h_tag": "h2",
         "section_visibility": "always"
       }
@@ -565,7 +488,6 @@
     "logo_list_NfdMqX",
     "1771073309b2a93d1c",
     "16551127939786a43a",
-    "165597098555c514a4",
-    "1655112847aaa4cc50"
+    "newsletter_anVyHJ"
   ]
 }

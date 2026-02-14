@@ -17,30 +17,11 @@
         "b497d03c-a24c-4683-8d7b-5aa889473ba2": {
           "type": "text",
           "settings": {
-            "title": "MI CONSERVA",
+            "title": "",
             "size": "h4",
-            "image_size": 100,
-            "content": "<h6>Dirección</h6><p>Avda Navarra 15<br/>31591 Corella, Navarra</p><h6>Teléfono</h6><p>+34 669 42 72 03</p><p>Horario de atención:<br/>L-V: 9.00h – 14.00h</p><h6>Email</h6><p><a href=\"mailto:compras@miconserva.es\">compras@miconserva.es</a></p>",
+            "image_size": 120,
+            "content": "<h6></h6><p>Avda Navarra 15<br/>31591 Corella, Navarra</p><p>+34 669 42 72 03</p><p>Horario de atención:<br/>L-V: 9.00h – 14.00h</p><p><a href=\"mailto:compras@miconserva.es\">compras@miconserva.es</a></p>",
             "show_social_icons": true,
-            "enable_follow_on_shop": true
-          }
-        },
-        "97af5be7-f228-4009-8f3e-12d1e44573b9": {
-          "type": "menu",
-          "settings": {
-            "title": "",
-            "menu": "",
-            "open_in_new_window": false
-          }
-        },
-        "68da10ba-83aa-4858-b4e7-b19015289fd5": {
-          "type": "text",
-          "settings": {
-            "title": "",
-            "size": "h5",
-            "image_size": 100,
-            "content": "",
-            "show_social_icons": false,
             "enable_follow_on_shop": true
           }
         },
@@ -48,16 +29,35 @@
           "type": "menu",
           "settings": {
             "title": "",
-            "menu": "",
+            "menu": "footer",
+            "open_in_new_window": false
+          }
+        },
+        "menu_LXDTA4": {
+          "type": "menu",
+          "settings": {
+            "title": "",
+            "menu": "main-menu",
+            "open_in_new_window": false
+          }
+        },
+        "image_gYKEjT": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Mi-Conserva-logo-granate.webp",
+            "constrain_image_width": false,
+            "max_width": 300,
+            "link": "",
             "open_in_new_window": false
           }
         }
       },
       "block_order": [
         "b497d03c-a24c-4683-8d7b-5aa889473ba2",
-        "97af5be7-f228-4009-8f3e-12d1e44573b9",
-        "68da10ba-83aa-4858-b4e7-b19015289fd5",
-        "eaa55a7e-c72f-40e3-adcb-a4b5111fdda9"
+        "eaa55a7e-c72f-40e3-adcb-a4b5111fdda9",
+        "menu_LXDTA4",
+        "image_gYKEjT"
       ],
       "custom_css": [
         ".powered-by-shopify {display: none !important;}"
@@ -66,7 +66,7 @@
         "layout": "grid-4 grid-portable-2 grid-lap-1",
         "show_locale_selector": true,
         "show_country_selector": false,
-        "remove_margin": false,
+        "remove_margin": true,
         "seo_h_tag": "h4"
       }
     }
