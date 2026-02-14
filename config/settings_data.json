@@ -513,5 +513,8 @@
       "color_gradient_cards": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
       "theme_preset": "Lively"
     }
+  },
+  "platform_customizations": {
+    "custom_css": []
   }
 }
