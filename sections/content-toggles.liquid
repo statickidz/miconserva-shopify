@@ -1,28 +1,3 @@
-{%- liquid
-  assign product_faqs = product.metafields.custom.faqs.value
-  assign use_product_faqs = false
-  if section.settings.use_product_faqs and product != blank and product_faqs != blank and product_faqs.size > 0
-    assign use_product_faqs = true
-  endif
-
-  assign has_visible_block = false
-  for block in section.blocks
-    if block.settings.hide_block_if != true or block.settings.image != blank or block.settings.body != blank
-      assign has_visible_block = true
-      break
-    endif
-  endfor
-
-  assign show_section = false
-  if use_product_faqs
-    assign show_section = true
-  elsif section.settings.use_product_faqs == false or product == blank
-    if has_visible_block
-      assign show_section = true
-    endif
-  endif
--%}
-{%- if show_section -%}
 {{ 'component-toggle.css' | asset_url | stylesheet_tag }}
 
 <div class="container--large container--vertical-space">
@@ -36,41 +11,7 @@
   <div class="{%- if section.settings.form_enable -%} faq-layout grid--no-stretch {%- endif -%}">
     <div class="faq-items">
       <div class="element--border-radius element--has-border">
-        {%- if use_product_faqs -%}
-          <toggle-group>
-            {%- for faq_item in product_faqs -%}
-              <toggle-tab
-                class="toggle toggle--faq toggle--{{ section.settings.toggle_size }} {% if forloop.first and section.settings.open_first %}opened{% endif %}"
-                data-togglepack-alternate
-              >
-                {%- liquid
-                  assign faq_title = faq_item.titulo | default: faq_item.title
-                  assign faq_body = faq_item.description | default: faq_item.body
-                -%}
-                <div
-                  class="toggle__title"
-                  data-js-title
-                  tabindex="0"
-                  aria-expanded="false"
-                  role="button"
-                  aria-controls="toggle--product-faq-{{ section.id }}-{{ forloop.index }}"
-                >
-                  <div class="toggle__heading">
-                    <span class="text-weight--bold">{{ faq_title }}</span>
-                  </div>
-                </div>
-                <div
-                  id="toggle--product-faq-{{ section.id }}-{{ forloop.index }}"
-                  data-js-content
-                  class="toggle__content rte remove-empty-space"
-                  role="region"
-                >
-                  {{ faq_body | metafield_tag }}
-                </div>
-              </toggle-tab>
-            {%- endfor -%}
-          </toggle-group>
-        {%- elsif section.blocks.size > 0 -%}
+        {%- if section.blocks.size > 0 -%}
           <toggle-group>
             {%- for block in section.blocks -%}
               {%- liquid
@@ -233,7 +174,6 @@
 </div>
 
 <script src="{{ 'component-toggle.js' | asset_url }}" defer></script>
-{%- endif -%}
 
 {% schema %}
 {
@@ -280,13 +220,6 @@
       "id": "open_first",
       "label": "t:sections.faq.settings.open_first.label",
       "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "use_product_faqs",
-      "label": "Use product FAQs (custom.faqs metafield)",
-      "info": "On product pages, show FAQs from the product metafield custom.faqs (list of faq metaobjects with title/titulo and description/body) when available. Otherwise section blocks are shown.",
-      "default": true
     },
     {
       "type": "select",
