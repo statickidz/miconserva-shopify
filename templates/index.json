@@ -297,7 +297,7 @@
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/ORIGEN-OK.webp",
-            "link": "https://www.origenonline.es/actualidad/cinco-falsos-mitos-sobre-las-conservas/",
+            "link": "https://www.origenonline.es/actualidad/mi-conserva-presenta-sus-hongos-en-aceite-de-oliva/",
             "open_in_new_window": true
           }
         },
@@ -348,6 +348,14 @@
             "link": "https://www.20minutos.es/gastronomia/recetas/alcachofa-superalimento-bajo-calorias-rico-nutrientes-nutricionista-recetas-sencillas-5680133/",
             "open_in_new_window": true
           }
+        },
+        "logo_eaQjqW": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/CAPITAL-RADIO-OK.webp",
+            "link": "https://www.capitalradio.es/audio/680bf6bfd09891b97271e797/136838616",
+            "open_in_new_window": true
+          }
         }
       },
       "block_order": [
@@ -357,7 +365,8 @@
         "logo_Ery7cw",
         "logo_jzHDG6",
         "logo_WPJzYJ",
-        "logo_XMQemh"
+        "logo_XMQemh",
+        "logo_eaQjqW"
       ],
       "name": "t:sections-categories.presets.logo_list",
       "settings": {
