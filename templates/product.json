@@ -20,6 +20,15 @@
           "type": "price",
           "settings": {}
         },
+        "text_LeBPEa": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.short_description | metafield_tag }}",
+            "text_size": "text-size--regular",
+            "text_color": "#6a6a6a",
+            "text_transform": false
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -161,6 +170,7 @@
       "block_order": [
         "title",
         "price",
+        "text_LeBPEa",
         "variant_picker",
         "space_wXNYjD",
         "buy_buttons",
