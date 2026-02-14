@@ -73,9 +73,9 @@
             "tooltip_info": "",
             "label_left": "Typical values",
             "label_right": "Per 100g",
-            "content": "<p>Energy, 205 kJ / 49 kcal<br/>Fat, 0g<br/>- of which: Saturates, 0g<br/>Carbohydrate, 10g<br/>- of which: Sugars, 7g<br/></p>",
-            "content_extra": "<p><strong>Ingredients:</strong> </p>",
-            "hide_block_if": false,
+            "content": "{{ product.metafields.custom.nutritional_info | metafield_tag }}",
+            "content_extra": "<p><strong>Ingredientes:</strong> {{ product.metafields.custom.ingredients.value }}</p>",
+            "hide_block_if": true,
             "collapsible": true,
             "opened_by_default": false,
             "layout": "compact",
@@ -91,6 +91,40 @@
             "subtitle": "",
             "tooltip_info": "",
             "content": "{{ product.metafields.custom.faqs | metafield_tag }}",
+            "page": "",
+            "hide_block_if": true,
+            "collapsible": true,
+            "opened_by_default": false,
+            "layout": "compact",
+            "text_color": "rgba(0,0,0,0)",
+            "bg_color": "rgba(0,0,0,0)",
+            "darken_header": true
+          }
+        },
+        "collapsible_tab_etVwEq": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Sugerencias de preparación",
+            "subtitle": "",
+            "tooltip_info": "",
+            "content": "<p>{{ product.metafields.custom[\"prepare-suggestions\"] | metafield_tag }}</p>",
+            "page": "",
+            "hide_block_if": true,
+            "collapsible": true,
+            "opened_by_default": false,
+            "layout": "compact",
+            "text_color": "rgba(0,0,0,0)",
+            "bg_color": "rgba(0,0,0,0)",
+            "darken_header": true
+          }
+        },
+        "collapsible_tab_jfU3DL": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Propiedades",
+            "subtitle": "",
+            "tooltip_info": "",
+            "content": "<p>{{ product.metafields.custom.properties | metafield_tag }}</p>",
             "page": "",
             "hide_block_if": true,
             "collapsible": true,
@@ -134,6 +168,8 @@
         "description",
         "nutrition_6txcnc",
         "collapsible_tab_iHGiYA",
+        "collapsible_tab_etVwEq",
+        "collapsible_tab_jfU3DL",
         "empty_space_1",
         "share"
       ],
