@@ -147,11 +147,12 @@
           "store-selector-0": {
             "type": "store",
             "settings": {
-              "store_name": "My store",
-              "store_pickup_price": "Free",
-              "store_pickup_time": "Usually ready in 24 hrs",
-              "store_address": "<p>123 John Doe Street<br/>Your Town, YT 12345</p><p> </p><p><strong>Store Hours<br/></strong>Sun: Closed<br/>Mon-Fri: 9:00 - 17:00<br/>Sat: 10:00 - 13:00</p><p><strong>What to expect at pickup</strong></p><p> </p>",
-              "store_closing_times": "<p>Closed</p><p>Closing at 5pm</p><p>Closing at 5pm</p><p>Closing at 5pm</p><p>Closing at 5pm</p><p>Closing at 5pm</p><p>Closing at 1pm</p>",
+              "store_name": "Corella, Navarra",
+              "store_pickup_price": "Gratis",
+              "store_pickup_time": "Normalmente listo en 24 horas",
+              "store_address": "<h5>Dirección</h5><p>Avda Navarra 15<br/>31591 Corella, Navarra</p><h5>Teléfono</h5><p>+34 669 42 72 03</p><p>Horario de atención:<br/>L-V: 9.00h – 14.00h</p><h5>Email</h5><p><a href=\"mailto:compras@miconserva.es\">compras@miconserva.es</a></p>",
+              "store_closing_times": "<p>Cerrado</p><p>Cierra a las 17:00</p><p>Cierra a las 17:00</p><p>Cierra a las 17:00</p><p>Cierra a las 17:00</p><p>Cierra a las 17:00</p><p>Cerrado</p>",
+              "image": "shopify://shop_images/FAVICON_2.jpg",
               "store_map_latitude": "46.7834818",
               "store_map_longitude": "23.5464733",
               "store_map_link": ""
