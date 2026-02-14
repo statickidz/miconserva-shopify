@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "flex_slideshow_fVfj3k": {
@@ -15,7 +6,6 @@
         "slide_image_rWEXcN": {
           "type": "_slide-image",
           "settings": {
-            "image": "shopify://shop_images/Mi-conserva-Fondo-Home.webp",
             "link": "",
             "open_in_new_window": false,
             "color_background_main": "rgba(0,0,0,0)",
@@ -25,7 +15,7 @@
             "caption_nMnnMq": {
               "type": "caption",
               "settings": {
-                "caption": "Platos 100 % naturales listos en 1 minuto",
+                "caption": "OUR PROMISE",
                 "text_size": "small",
                 "text_background_color": "rgba(0,0,0,0)",
                 "text_color": "rgba(0,0,0,0)"
@@ -35,9 +25,9 @@
             "heading_E7DeUU": {
               "type": "heading",
               "settings": {
-                "heading": "Alimentación saludable[br]directamente desde Navarra",
-                "title_size": "h2",
-                "line_height": "small",
+                "heading": "Fresh. [br]Organic. [br]Delivered.",
+                "title_size": "h1",
+                "line_height": "default",
                 "text_color": "#343f36",
                 "seo_h_tag": "h3"
               },
@@ -52,7 +42,7 @@
                 "button_mp9nKm": {
                   "type": "button",
                   "settings": {
-                    "button_label": "Descubre los platos",
+                    "button_label": "SHOP NOW",
                     "link": "",
                     "open_in_new_window": false,
                     "button_size": "regular",
@@ -61,10 +51,24 @@
                     "color_accent_buttons": "rgba(0,0,0,0)"
                   },
                   "blocks": {}
+                },
+                "button_FVTX9K": {
+                  "type": "button",
+                  "settings": {
+                    "button_label": "LEARN MORE",
+                    "link": "",
+                    "open_in_new_window": false,
+                    "button_size": "regular",
+                    "button_style": "outline",
+                    "color_text_buttons": "#343f36",
+                    "color_accent_buttons": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "button_mp9nKm"
+                "button_mp9nKm",
+                "button_FVTX9K"
               ]
             }
           },
@@ -73,14 +77,76 @@
             "heading_E7DeUU",
             "content_group_xhinPE"
           ]
+        },
+        "slide_image_LLrAYi": {
+          "type": "_slide-image",
+          "settings": {
+            "link": "",
+            "open_in_new_window": false,
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_text_main": "rgba(0,0,0,0)"
+          },
+          "blocks": {
+            "caption_j4d4q3": {
+              "type": "caption",
+              "settings": {
+                "caption": "UP TO 40% OFF",
+                "text_size": "regular",
+                "text_background_color": "rgba(0,0,0,0)",
+                "text_color": "rgba(0,0,0,0)"
+              },
+              "blocks": {}
+            },
+            "heading_wzKzeB": {
+              "type": "heading",
+              "settings": {
+                "heading": "Kitchen & [br]Dining Sale",
+                "title_size": "h1",
+                "line_height": "default",
+                "text_color": "rgba(0,0,0,0)",
+                "seo_h_tag": "h3"
+              },
+              "blocks": {}
+            },
+            "content_group_FDVyLV": {
+              "type": "content-group",
+              "settings": {
+                "spacing": "small"
+              },
+              "blocks": {
+                "button_wf4ffd": {
+                  "type": "button",
+                  "settings": {
+                    "button_label": "BUY NOW",
+                    "link": "",
+                    "open_in_new_window": false,
+                    "button_size": "regular",
+                    "button_style": "solid",
+                    "color_text_buttons": "rgba(0,0,0,0)",
+                    "color_accent_buttons": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "button_wf4ffd"
+              ]
+            }
+          },
+          "block_order": [
+            "caption_j4d4q3",
+            "heading_wzKzeB",
+            "content_group_FDVyLV"
+          ]
         }
       },
       "block_order": [
-        "slide_image_rWEXcN"
+        "slide_image_rWEXcN",
+        "slide_image_LLrAYi"
       ],
       "settings": {
-        "desktop_height": "60vh",
-        "mobile_height": "40vh",
+        "desktop_height": "80vh",
+        "mobile_height": "80vh",
         "is_auto_height": false,
         "autorotate_enable": false,
         "autorotate_interval": 6,
@@ -91,12 +157,10 @@
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
         "section_heading_color": "rgba(0,0,0,0)",
-        "descrease_margin": false,
         "remove_margin": false,
         "color_hide_borders": false,
         "color_hide_shadow": true,
-        "disable_parallax": false,
-        "section_visibility": "always"
+        "disable_parallax": false
       }
     },
     "text_columns_images_9m9Xcc": {
@@ -200,21 +264,11 @@
         "style": "slider",
         "layout": "grid-6 grid-portable-4 grid-lap-3 grid-palm-2 smel",
         "border_radius": 0,
-        "inherit_card_design": false,
-        "color_background_main": "rgba(0,0,0,0)",
-        "color_text_main": "rgba(0,0,0,0)",
-        "color_accent_main": "rgba(0,0,0,0)",
-        "color_borders_main": "rgba(0,0,0,0)",
-        "color_shadow_main": "rgba(0,0,0,0)",
-        "color_hide_borders": false,
-        "color_hide_shadow": false,
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
         "section_heading_color": "rgba(0,0,0,0)",
-        "descrease_margin": false,
         "remove_margin": false,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
+        "seo_h_tag": "h2"
       }
     },
     "featured-collection": {
@@ -271,10 +325,8 @@
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
         "section_heading_color": "rgba(0,0,0,0)",
-        "descrease_margin": false,
         "remove_margin": false,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
+        "seo_h_tag": "h2"
       }
     },
     "165406738229739f4d": {
@@ -359,10 +411,8 @@
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
         "section_heading_color": "rgba(0,0,0,0)",
-        "descrease_margin": false,
         "remove_margin": false,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
+        "seo_h_tag": "h2"
       }
     },
     "featured_collection_X3jgLR": {
@@ -397,7 +447,7 @@
         "local_availability_QfVefU"
       ],
       "settings": {
-        "heading": "Bread and Bakery",
+        "heading": "Bread & Bakery",
         "subheading": "",
         "show_view_all": true,
         "section_heading_layout": "section-heading--left",
@@ -419,10 +469,8 @@
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
         "section_heading_color": "rgba(0,0,0,0)",
-        "descrease_margin": false,
         "remove_margin": false,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
+        "seo_h_tag": "h2"
       }
     },
     "flex_grid_DhRTt8": {
@@ -458,9 +506,7 @@
             },
             "empty_space_GTyWJz": {
               "type": "empty-space",
-              "settings": {
-                "height": "0"
-              },
+              "settings": {},
               "blocks": {}
             },
             "heading_cAQegY": {
@@ -476,9 +522,7 @@
             },
             "empty_space_p6HpDW": {
               "type": "empty-space",
-              "settings": {
-                "height": "0"
-              },
+              "settings": {},
               "blocks": {}
             },
             "content_group_Cb8DcR": {
@@ -547,8 +591,7 @@
         "section_heading_color": "rgba(0,0,0,0)",
         "descrease_margin": false,
         "remove_margin": false,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
+        "seo_h_tag": "h2"
       }
     },
     "1657094048f07fb2a2": {
@@ -581,8 +624,7 @@
         "remove_bottom_margin": false,
         "color_background_main": "#ffffff",
         "section_background_gradient": "",
-        "color_text_main": "#5c8e61",
-        "section_visibility": "always"
+        "color_text_main": "#5c8e61"
       }
     },
     "flex_grid_haPGC6": {
@@ -629,9 +671,7 @@
             },
             "empty_space_UKzt3M": {
               "type": "empty-space",
-              "settings": {
-                "height": "0"
-              },
+              "settings": {},
               "blocks": {}
             },
             "button_XH3Wi9": {
@@ -674,8 +714,7 @@
         "section_heading_color": "rgba(0,0,0,0)",
         "descrease_margin": false,
         "remove_margin": false,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
+        "seo_h_tag": "h2"
       }
     },
     "16546982542e923b5a": {
@@ -697,17 +736,7 @@
         },
         "16546982534861ca3b-4": {
           "type": "description",
-          "settings": {
-            "heading": "",
-            "subtitle": "",
-            "tooltip_info": "",
-            "collapsible": false,
-            "opened_by_default": false,
-            "layout": "compact",
-            "text_color": "rgba(0,0,0,0)",
-            "bg_color": "rgba(0,0,0,0)",
-            "darken_header": false
-          }
+          "settings": {}
         },
         "space_K3qE87": {
           "type": "space",
@@ -801,7 +830,6 @@
         "enable_zoom": true,
         "enable_video_looping": true,
         "enable_video_autoplay": false,
-        "disable_parallax": false,
         "default_to_first_variant": true
       }
     },
@@ -849,9 +877,7 @@
             },
             "empty_space_tniwtW": {
               "type": "empty-space",
-              "settings": {
-                "height": "0"
-              },
+              "settings": {},
               "blocks": {}
             },
             "button_mNrLKh": {
@@ -916,9 +942,7 @@
             },
             "empty_space_QELFVc": {
               "type": "empty-space",
-              "settings": {
-                "height": "0"
-              },
+              "settings": {},
               "blocks": {}
             },
             "button_pnV4rz": {
@@ -962,8 +986,7 @@
         "section_heading_color": "rgba(0,0,0,0)",
         "descrease_margin": false,
         "remove_margin": false,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
+        "seo_h_tag": "h2"
       }
     },
     "1654161920efe5f084": {
@@ -1052,10 +1075,8 @@
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
         "section_heading_color": "rgba(0,0,0,0)",
-        "descrease_margin": false,
         "remove_margin": false,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
+        "seo_h_tag": "h2"
       }
     },
     "1655121489db318f96": {
@@ -1093,13 +1114,7 @@
         "color_borders_main": "#eeeeee",
         "color_hide_borders": true,
         "color_hide_shadow": false,
-        "section_background_color": "rgba(0,0,0,0)",
-        "section_background_gradient": "",
-        "section_heading_color": "rgba(0,0,0,0)",
-        "descrease_margin": false,
-        "remove_margin": false,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
+        "seo_h_tag": "h2"
       }
     },
     "16551304148266b5a5": {
@@ -1139,7 +1154,6 @@
         "is_fullwidth": true,
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
-        "descrease_margin": false,
         "remove_margin": false,
         "color_background_main": "#e1e0d7",
         "color_text_main": "rgba(0,0,0,0)",
@@ -1147,8 +1161,7 @@
         "color_borders_main": "rgba(0,0,0,0)",
         "color_shadow_main": "rgba(0,0,0,0)",
         "color_hide_borders": true,
-        "color_hide_shadow": false,
-        "section_visibility": "always"
+        "color_hide_shadow": false
       }
     },
     "16551212489c663a1e": {
@@ -1200,10 +1213,8 @@
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
         "section_heading_color": "rgba(0,0,0,0)",
-        "descrease_margin": false,
         "remove_margin": false,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
+        "seo_h_tag": "h2"
       }
     },
     "d57de2d5-c548-48dd-a4a3-581d89d355b5": {
@@ -1281,10 +1292,8 @@
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
         "section_heading_color": "rgba(0,0,0,0)",
-        "descrease_margin": false,
         "remove_margin": false,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
+        "seo_h_tag": "h2"
       }
     },
     "16553621956de397b6": {
@@ -1372,10 +1381,8 @@
         "section_background_color": "rgba(0,0,0,0)",
         "section_background_gradient": "",
         "section_heading_color": "rgba(0,0,0,0)",
-        "descrease_margin": false,
         "remove_margin": false,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
+        "seo_h_tag": "h2"
       }
     },
     "166124485020a4ae62": {
@@ -1428,8 +1435,6 @@
         "subheading": "",
         "section_heading_layout": "section-heading--left",
         "open_first": false,
-        "use_product_faqs": true,
-        "toggle_size": "small",
         "form_enable": false,
         "form_title": "Contact form",
         "seo_h_tag": "h2"
@@ -1492,21 +1497,11 @@
         "style": "slider",
         "layout": "grid-4 grid-portable-3 grid-lap-2",
         "border_radius": 0,
-        "inherit_card_design": false,
-        "color_background_main": "rgba(0,0,0,0)",
-        "color_text_main": "rgba(0,0,0,0)",
-        "color_accent_main": "rgba(0,0,0,0)",
-        "color_borders_main": "rgba(0,0,0,0)",
-        "color_shadow_main": "rgba(0,0,0,0)",
-        "color_hide_borders": false,
-        "color_hide_shadow": false,
         "section_background_color": "#f5f5f5",
         "section_background_gradient": "",
         "section_heading_color": "rgba(0,0,0,0)",
-        "descrease_margin": false,
         "remove_margin": false,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
+        "seo_h_tag": "h2"
       }
     },
     "1655112847aaa4cc50": {
@@ -1523,10 +1518,8 @@
         "color_hide_shadow": false,
         "section_background_color": "#e7e7e7",
         "section_background_gradient": "",
-        "descrease_margin": false,
         "remove_margin": true,
-        "seo_h_tag": "h2",
-        "section_visibility": "always"
+        "seo_h_tag": "h2"
       }
     }
   },
