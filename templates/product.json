@@ -213,7 +213,7 @@
         "google_reviews_trust_badges_hp_google_reviews_widget_j46bRx": {
           "type": "shopify://apps/google-reviews-trust-badges-hp/blocks/google_reviews_widget/7f0cbed4-3c3f-4f98-833e-b8cfbec52b31",
           "settings": {
-            "layout_type": "carousel",
+            "layout_type": "grid",
             "grid_layout": "grid_layout_1",
             "carousel_layout": "carousel_layout_1",
             "masonry_layout": "masonry_layout_1",
