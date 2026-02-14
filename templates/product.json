@@ -84,6 +84,23 @@
             "darken_header": true
           }
         },
+        "collapsible_tab_iHGiYA": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Preguntas frecuentes",
+            "subtitle": "",
+            "tooltip_info": "",
+            "content": "{{ product.metafields.custom.faqs | metafield_tag }}",
+            "page": "",
+            "hide_block_if": true,
+            "collapsible": true,
+            "opened_by_default": false,
+            "layout": "compact",
+            "text_color": "rgba(0,0,0,0)",
+            "bg_color": "rgba(0,0,0,0)",
+            "darken_header": true
+          }
+        },
         "empty_space_1": {
           "type": "space",
           "settings": {}
@@ -116,6 +133,7 @@
         "empty_space_2",
         "description",
         "nutrition_6txcnc",
+        "collapsible_tab_iHGiYA",
         "empty_space_1",
         "share"
       ],
