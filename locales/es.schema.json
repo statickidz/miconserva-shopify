@@ -647,6 +647,28 @@
     }
   },
   "sections": {
+    "all": {
+      "animation": {
+        "image_behavior": {
+          "label": "Animación",
+          "options__1": {
+            "label": "Ninguna"
+          },
+          "options__2": {
+            "label": "Movimiento ambiental"
+          },
+          "options__3": {
+            "label": "Posición fija de fondo"
+          },
+          "options__4": {
+            "label": "Zoom al desplazar"
+          }
+        }
+      },
+      "colors": {
+        "label": "Esquema de color"
+      }
+    },
     "main-404": {
       "name": "Principal 404"
     },
@@ -655,6 +677,107 @@
     },
     "main-page": {
       "name": "Página principal"
+    },
+    "image-banner": {
+      "name": "Banner de imagen",
+      "settings": {
+        "image": {
+          "label": "Imagen 1"
+        },
+        "image_2": {
+          "label": "Imagen 2"
+        },
+        "image_overlay_opacity": {
+          "label": "Opacidad de superposición"
+        },
+        "image_height": {
+          "label": "Altura",
+          "options__1": {
+            "label": "Adaptar a la primera imagen"
+          },
+          "options__2": {
+            "label": "Pequeña"
+          },
+          "options__3": {
+            "label": "Mediana"
+          },
+          "options__4": {
+            "label": "Grande"
+          }
+        },
+        "content": {
+          "content": "Contenido"
+        },
+        "desktop_content_position": {
+          "label": "Posición",
+          "options__1": {
+            "label": "Arriba izquierda"
+          },
+          "options__2": {
+            "label": "Arriba centro"
+          },
+          "options__3": {
+            "label": "Arriba derecha"
+          },
+          "options__4": {
+            "label": "Centro izquierda"
+          },
+          "options__5": {
+            "label": "Centro"
+          },
+          "options__6": {
+            "label": "Centro derecha"
+          },
+          "options__7": {
+            "label": "Abajo izquierda"
+          },
+          "options__8": {
+            "label": "Abajo centro"
+          },
+          "options__9": {
+            "label": "Abajo derecha"
+          }
+        },
+        "desktop_content_alignment": {
+          "label": "Alineación",
+          "options__1": {
+            "label": "Izquierda"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Derecha"
+          }
+        },
+        "show_text_box": {
+          "label": "Contenedor"
+        },
+        "mobile": {
+          "content": "Diseño móvil"
+        },
+        "stack_images_on_mobile": {
+          "label": "Apilar imágenes"
+        },
+        "mobile_content_alignment": {
+          "label": "Alineación",
+          "options__1": {
+            "label": "Izquierda"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Derecha"
+          }
+        },
+        "show_text_below": {
+          "label": "Contenedor"
+        }
+      },
+      "presets": {
+        "name": "Banner de imagen"
+      }
     },
     "refactor_words": {
       "seo": {
