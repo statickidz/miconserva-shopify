@@ -257,7 +257,7 @@
         "layout_desktop": "four-columns",
         "layout_mobile": "grid-palm-2",
         "products_number": 16,
-        "collection": "",
+        "collection": "mas-vendidos",
         "collection_1": "",
         "collection_2": "",
         "collection_3": "",
@@ -405,7 +405,7 @@
         "layout_desktop": "four-columns",
         "layout_mobile": "grid-palm-2",
         "products_number": 8,
-        "collection": "",
+        "collection": "conservas",
         "collection_1": "",
         "collection_2": "",
         "collection_3": "",
@@ -548,40 +548,6 @@
         "descrease_margin": false,
         "remove_margin": false,
         "seo_h_tag": "h2",
-        "section_visibility": "always"
-      }
-    },
-    "1657094048f07fb2a2": {
-      "type": "marquee",
-      "blocks": {
-        "16570940482780d791-0": {
-          "type": "text",
-          "settings": {
-            "marquee_text": "<strong>New store in </strong><em><strong>New York</strong></em>"
-          }
-        },
-        "image_VUTRrJ": {
-          "type": "image",
-          "settings": {
-            "border_radius": 100
-          }
-        }
-      },
-      "block_order": [
-        "16570940482780d791-0",
-        "image_VUTRrJ"
-      ],
-      "settings": {
-        "scroll_direction": "left",
-        "speed": 200,
-        "pause_on_hover": false,
-        "horizontal_space": "0.7",
-        "text_size": "200",
-        "remove_top_margin": false,
-        "remove_bottom_margin": false,
-        "color_background_main": "#ffffff",
-        "section_background_gradient": "",
-        "color_text_main": "#5c8e61",
         "section_visibility": "always"
       }
     },
@@ -1361,11 +1327,11 @@
         "6d7d92cc-64fe-4f89-9974-bb98f18308a0"
       ],
       "settings": {
-        "title": "Latest Articles",
-        "subheading": "",
+        "title": "Inspírate",
+        "subheading": "Con nuestras recetas",
         "show_view_all": true,
         "section_heading_layout": "section-heading--left",
-        "blog": "",
+        "blog": "recetas",
         "emphasize_first": false,
         "blog_show_image": true,
         "image_aspect_ratio": "1.33333",
@@ -1378,71 +1344,15 @@
         "section_visibility": "always"
       }
     },
-    "166124485020a4ae62": {
-      "type": "content-toggles",
-      "blocks": {
-        "16612448501816a8ab-0": {
-          "type": "text",
-          "settings": {
-            "title": "WINE TASTING",
-            "subtitle": "Saint Germain.  Thu Sep 24th  6.00pm - 8.00pm",
-            "icon": "map-marker",
-            "button_label": "Register",
-            "button_link": "",
-            "body": "<p>Spend a decadent afternoon in our Saint Germain store with a wine and cheese tasting, guided by a knowledgeable sommelier. </p><p></p><p>Sample wines from various regions, including Rhone, Bordeaux and Sancerre, learning how each region produces different wines. </p><p></p><p>- Find out the proper way to taste wine. <br/>- Nibble on wine-friendly snacks like French cheeses and cured meats for lunch while you sip in a comfortable converted wine cellar in the center of Paris. <br/>- Taste five different wines from regions such as Bordeaux, Sancerre and Champagne Sample artisanal cheese and tasty charcuterie <br/>- Learn about the best wine-tasting techniques from your trained sommelier guide Relax<br/></p><p></p>",
-            "hide_block_if": false
-          }
-        },
-        "16612448501816a8ab-1": {
-          "type": "text",
-          "settings": {
-            "title": "Free cooking class",
-            "subtitle": "Champs Élysées.  Wed Oct 11th  5.00pm - 8.00pm",
-            "icon": "map-marker",
-            "button_label": "Register",
-            "button_link": "",
-            "body": "<p>In our third MasterClass, Chef John Doe focuses on preparing fresh seafood like lobster and salmon, making classic desserts such as apple pie and lemon tart, and showing how sous vide cooking can be done at home to enhance flavor and texture. </p><p></p><p>Whether you’re a beginning or advanced cook, you’ll learn the techniques and principles that will give you the understanding and skills to get the most delicious results.</p>",
-            "hide_block_if": false
-          }
-        },
-        "16612448501816a8ab-2": {
-          "type": "text",
-          "settings": {
-            "title": "Pumpkin carving contest",
-            "subtitle": "La Défense.  Fri Oct 18th  5.00pm - 8.00pm",
-            "icon": "map-marker",
-            "button_label": "Register",
-            "button_link": "",
-            "body": "<p>This year’s contest will be conducted as follows: </p><p>Pumpkins will be <span style=\"text-decoration:underline\">carved </span>at home and brought to school on <strong>Wednesday, October 30th, </strong><span style=\"text-decoration:underline\"><strong>no </strong></span><strong>later than 9:00am</strong>. Pumpkins will be displayed in the front hall, and the judging will take place on Wednesday, October 30th at 3:00pm. They will be lit and displayed on the stage for the school to view on Thursday at 1:00pm. </p><p>A <span style=\"text-decoration:underline\">battery operated candle </span>must be provided by the student in order for the pumpkin to be lit.</p>",
-            "hide_block_if": false
-          }
-        }
-      },
-      "block_order": [
-        "16612448501816a8ab-0",
-        "16612448501816a8ab-1",
-        "16612448501816a8ab-2"
-      ],
-      "settings": {
-        "heading": "Upcoming Events",
-        "subheading": "",
-        "section_heading_layout": "section-heading--left",
-        "open_first": false,
-        "use_product_faqs": true,
-        "toggle_size": "small",
-        "form_enable": false,
-        "form_title": "Contact form",
-        "seo_h_tag": "h2"
-      }
-    },
     "165597098555c514a4": {
       "type": "text-columns-images",
       "blocks": {
         "1655970985e1e8c596-0": {
           "type": "image",
           "settings": {
-            "title": "Local Pickup",
-            "caption": "Get orders faster while avoiding shipping fees",
+            "image": "shopify://shop_images/BAG_PNG_MC_2.png",
+            "title": "Recogida local",
+            "caption": "Compra online y recoge cuando quieras.Rápido, cómodo y sin gastos de envío.",
             "link": "",
             "open_in_new_window": false,
             "seo_h_tag": "h3"
@@ -1451,8 +1361,9 @@
         "1655970985e1e8c596-1": {
           "type": "image",
           "settings": {
-            "title": "Local Delivery",
-            "caption": "100% curbside recyclable boxes",
+            "image": "shopify://shop_images/icon2.webp",
+            "title": "Envío a domicilio",
+            "caption": "Cajas seguras y embalaje reciclable.Tu pedido llega perfecto, como recién salido del obrador.",
             "link": "",
             "open_in_new_window": false,
             "seo_h_tag": "h3"
@@ -1461,8 +1372,9 @@
         "1655970985e1e8c596-2": {
           "type": "image",
           "settings": {
-            "title": "For Conscious Eaters",
-            "caption": "We are supporting small farmers and producers",
+            "image": "shopify://shop_images/icon3.webp",
+            "title": "Conservas con origen",
+            "caption": "Trabajamos con pequeños productores que respetan el producto y el tiempo. Calidad real, sin atajos.",
             "link": "",
             "open_in_new_window": false,
             "seo_h_tag": "h3"
@@ -1471,8 +1383,9 @@
         "41380ebb-0166-4f1a-af8f-a77893a5b806": {
           "type": "image",
           "settings": {
-            "title": "Delicious & New Food",
-            "caption": "Feel great about what you eat",
+            "image": "shopify://shop_images/verdudas-de-navarra-png-fondo-transparente.png",
+            "title": "Sabor que se nota",
+            "caption": "Ingredientes sencillos, recetas tradicionales y un sabor que sorprende.Porque comer bien debería ser lo normal.",
             "link": "",
             "open_in_new_window": false,
             "seo_h_tag": "h3"
@@ -1513,8 +1426,8 @@
       "type": "newsletter",
       "settings": {
         "show_icon": true,
-        "title": "Sign up for our newsletter",
-        "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+        "title": "Suscríbete a nuestro boletín",
+        "text": "<p>Recibe novedades, lanzamientos exclusivos y promociones especiales de nuestras conservas artesanas.</p>",
         "color_background_main": "#e7e7e7",
         "color_text_main": "#000000",
         "color_borders_main": "rgba(0,0,0,0)",
@@ -1537,7 +1450,6 @@
     "165406738229739f4d",
     "featured_collection_X3jgLR",
     "flex_grid_DhRTt8",
-    "1657094048f07fb2a2",
     "flex_grid_haPGC6",
     "16546982542e923b5a",
     "flex_grid_QryJ3i",
@@ -1548,7 +1460,6 @@
     "d57de2d5-c548-48dd-a4a3-581d89d355b5",
     "16553621956de397b6",
     "16551127939786a43a",
-    "166124485020a4ae62",
     "165597098555c514a4",
     "1655112847aaa4cc50"
   ]
