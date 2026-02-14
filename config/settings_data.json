@@ -89,7 +89,7 @@
     "cart_recommendations": true,
     "enable_recommendations_quick_buy": true,
     "cart_free_shipping": true,
-    "show_breadcrumb": false,
+    "show_breadcrumb": true,
     "show_gotop": false,
     "theme_preset": "Local",
     "show_currency_codes": false,
