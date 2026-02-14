@@ -133,7 +133,7 @@
             "heading": "Propiedades",
             "subtitle": "",
             "tooltip_info": "",
-            "content": "<p>{{ product.metafields.custom.properties | metafield_tag }}</p>",
+            "content": "{{ product.metafields.custom.props | metafield_tag }}",
             "page": "",
             "hide_block_if": true,
             "collapsible": true,
@@ -205,64 +205,6 @@
         "sticky_bar_bgcolor": "#ffffff",
         "sticky_bar_txtcolor": "#111111",
         "sticky_bar_blur": true
-      }
-    },
-    "content_toggles_Qb8prr": {
-      "type": "content-toggles",
-      "blocks": {
-        "text_8YLzaq": {
-          "type": "text",
-          "settings": {
-            "title": "Shipping details",
-            "subtitle": "Question subtitle",
-            "icon": "no-icon",
-            "button_label": "",
-            "button_link": "",
-            "body": "<p>Write some useful information about your shipping details</p><p>Link to your <a href=\"#\">shipping policy</a>.</p>",
-            "hide_block_if": false
-          }
-        },
-        "text_QkxzkC": {
-          "type": "text",
-          "settings": {
-            "title": "Delivery details",
-            "subtitle": "Question subtitle",
-            "icon": "no-icon",
-            "button_label": "",
-            "button_link": "",
-            "body": "<p>Let your customers know if you offer free delivery for certain types of orders</p><p>Link to your <a href=\"#\">offers page</a>.</p>",
-            "hide_block_if": false
-          }
-        },
-        "text_AhMQEQ": {
-          "type": "text",
-          "settings": {
-            "title": "Returns details",
-            "subtitle": "Question subtitle",
-            "icon": "no-icon",
-            "button_label": "",
-            "button_link": "",
-            "body": "<p>Show customers how much time they have for testing your products</p><p>Link to your <a href='#'>returns policy</a>.</p>",
-            "hide_block_if": false
-          }
-        }
-      },
-      "block_order": [
-        "text_8YLzaq",
-        "text_QkxzkC",
-        "text_AhMQEQ"
-      ],
-      "name": "t:sections-categories.presets.faq",
-      "settings": {
-        "heading": "Preguntas frecuentes",
-        "subheading": "",
-        "section_heading_layout": "section-heading--left",
-        "open_first": false,
-        "use_product_faqs": true,
-        "toggle_size": "small",
-        "form_enable": false,
-        "form_title": "Contact form",
-        "seo_h_tag": "h2"
       }
     },
     "17697711042f857552": {
@@ -337,7 +279,6 @@
   },
   "order": [
     "main",
-    "content_toggles_Qb8prr",
     "17697711042f857552",
     "product-recommendations"
   ]
