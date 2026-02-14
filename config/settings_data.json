@@ -80,6 +80,7 @@
     "product_card_badge_custom_2_text_color": "#ffffff",
     "product_card_badge_custom_3_color": "#dd9900",
     "product_card_badge_custom_3_text_color": "#ffffff",
+    "favicon": "shopify://shop_images/FAVICON_2.jpg",
     "cart_action": "overlay",
     "sticky_cart_actions": true,
     "cart_additional_buttons": false,
