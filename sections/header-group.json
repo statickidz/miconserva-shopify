@@ -17,15 +17,15 @@
         "359cd407-1fe0-473f-8b0c-cf52d0783b96": {
           "type": "content",
           "settings": {
-            "text": "Consigue ENVÍO GRATIS a partir de 25€",
-            "link": "",
+            "text": "ENVÍO GRATIS a partir de 25€",
+            "link": "shopify://collections/all",
             "target": false
           }
         },
         "a88d0552-422f-479a-9ccf-bddae7bb3e36": {
           "type": "content",
           "settings": {
-            "text": "Recogida local GRATIS en nuestras tiendas",
+            "text": "Recogida local GRATIS en nuestra fábrica",
             "link": "",
             "target": true
           }
@@ -40,7 +40,7 @@
         "show_locale_selector": true,
         "show_country_selector": false,
         "show_social_icons": true,
-        "bar_bgcolor": "#1f1f1f",
+        "bar_bgcolor": "#61482e",
         "bar_txtcolor": "#ffffff"
       }
     },
@@ -60,29 +60,24 @@
             "promotion_button_label": "",
             "promotion_button_size": "regular",
             "promotion_button_link": "",
-            "promotion_color_txt": "#000000",
+            "promotion_color_txt": "#3e3328",
             "promotion_color_bg": "#ebe0c9"
           }
         },
         "2e0d797d-c8e1-463d-a5ad-fe6ae2c0c9de": {
           "type": "info",
           "settings": {
-            "caption": "¿Necesitas envío?",
+            "caption": "Directo a tu despensa",
             "title": "Envío gratis desde 25€",
             "link": "",
             "link_type": "_self",
             "icon": "delivery"
           }
-        },
-        "a3ca4eae-c334-45dd-9842-c49d594b1c4b": {
-          "type": "store-selector",
-          "settings": {}
         }
       },
       "block_order": [
         "3036ff1d-3133-4662-ad23-bd673e5e4f1d",
-        "2e0d797d-c8e1-463d-a5ad-fe6ae2c0c9de",
-        "a3ca4eae-c334-45dd-9842-c49d594b1c4b"
+        "2e0d797d-c8e1-463d-a5ad-fe6ae2c0c9de"
       ],
       "settings": {
         "logo_src": "shopify://shop_images/Mi-Conserva-logo-granate.webp",
@@ -94,7 +89,7 @@
         "header_absolute_homepage": false,
         "header_absolute_collection": false,
         "header_absolute_custom": "",
-        "color_text_header": "#000000",
+        "color_text_header": "#3e3328",
         "select_header_actions_on_mobile": "show_on_homepage",
         "show_header_actions": true,
         "show_locale_selector": true,
