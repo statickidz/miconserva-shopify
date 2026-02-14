@@ -153,9 +153,8 @@
               "store_pickup_time": "Normalmente listo en 24 horas",
               "store_address": "<h5>Dirección</h5><p>Avda Navarra 15<br/>31591 Corella, Navarra</p><h5>Teléfono</h5><p>+34 669 42 72 03</p><p>Horario de atención:<br/>L-V: 9.00h – 14.00h</p><h5>Email</h5><p><a href=\"mailto:compras@miconserva.es\">compras@miconserva.es</a></p>",
               "store_closing_times": "<p>Cerrado</p><p>Cierra a las 17:00</p><p>Cierra a las 17:00</p><p>Cierra a las 17:00</p><p>Cierra a las 17:00</p><p>Cierra a las 17:00</p><p>Cerrado</p>",
-              "image": "shopify://shop_images/FAVICON_2.jpg",
-              "store_map_latitude": "46.7834818",
-              "store_map_longitude": "23.5464733",
+              "store_map_latitude": "42.1166224",
+              "store_map_longitude": "-1.7968598",
               "store_map_link": ""
             }
           }
@@ -165,7 +164,7 @@
         ],
         "settings": {
           "map_enable": true,
-          "map_zoom": 10,
+          "map_zoom": 11,
           "map_style": "silver"
         }
       }
