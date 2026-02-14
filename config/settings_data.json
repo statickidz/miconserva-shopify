@@ -515,6 +515,8 @@
     }
   },
   "platform_customizations": {
-    "custom_css": []
+    "custom_css": [
+      "#gr-widget-1165746100.gr-grid-layout-1 .gr-grid {margin-bottom: 0px !important;}"
+    ]
   }
 }
